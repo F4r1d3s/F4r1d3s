@@ -2,7 +2,7 @@ const readlineSync = require("readline-sync");
 const { generarNumeroAleatorio, verificarAdivinanza } = require("./adivinanza");
 
 const obtenerNumeroUsuario = () => {
-    return readlineSync.question("Ingresar un numero: ");
+    return parseInt(readlineSync.question("Ingresar un numero: "));
 };
 
 const juegoAdivinanza = () => {
